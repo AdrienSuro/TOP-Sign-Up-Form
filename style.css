@@ -50,7 +50,7 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&family=Yanone+Kaffeesatz&family=Zen+Dots&display=swap');
 
 :root {
-    font-family: 'Yanone Kaffeesatz', inherit;
+    font-family: 'Yanone Kaffeesatz';
     font-size: 20px;
     height: 100vh;
     --color-one: #d0562e; 
@@ -64,6 +64,7 @@ table {
 body {
     display: flex;
     flex-flow: row nowrap;
+    font-family: 'Yanone Kaffeesatz';
 }
 
 .main_left {
@@ -115,7 +116,7 @@ button {
     width: 62vmax;
     padding-left: 20px;
     padding-top: 40px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
@@ -127,6 +128,7 @@ button {
     height: 40vh; 
     display: flex;
     flex-flow: column nowrap;
+    background-color: var(--color-one) ;
 }
 
 .input_div > div {
@@ -139,6 +141,17 @@ button {
     height: 30vh;
 }
 
+form {
+    display: flex;
+    flex-flow: row wrap;
+    width: 62vmax;
+    padding-right: 20vmax;
+}
+
+form>label, form>input {
+    width: 10vmax;
+    margin-right: 2.5px;
+}
 
 
 
