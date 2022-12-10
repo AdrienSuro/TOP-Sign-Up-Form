@@ -21,16 +21,49 @@
     </div>
     <div class="right main">
         <div class="right container first">
+            <hr>
+            <hr>
+            <hr>
             <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
             <p>Sign up <em>now</em> to get started.</p>
+            <hr>
             <p>You <em>know</em> you want to.</p>
         </div>
         <div class="right container second">
-            <form action="post"></form>
+            <h2>Let's do this !</h2>
+            <form method="post">
+                <div class="form">
+                    <div class="input">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="input">
+                        <label for="last_name">Last name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                    <div class="input">
+                        <label for="">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input">
+                        <label for="phone_number">Phone number</label>
+                        <input type="text" name="phone_number" id="phone_number">
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="password" minlength="7" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must contain minimum eight characters and at least one letter and one number" required>
+                    </div>
+                    <div class="input">
+                        <label for="password_confirm">Confirm Password</label>
+                        <input type="text" name="password_confirm" id="password_confirm" minlength="7" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Password must contain minimum eight characters and at least one letter and one number" required>
+                    </div>
+                </div>
         </div>
         <div class="right container third">
-            <button>Create Account</button>
-            <p>Already have an account?</p><a href="#">Log in</a>"
+            <button type="submit">Create Account</button>
+            </form>
+            <hr>
+            <p>Already have an account? <a href="#" id="login">Log in</a></p>
         </div>
     </div>
 </body>
